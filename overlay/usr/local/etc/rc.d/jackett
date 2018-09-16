@@ -21,7 +21,7 @@
 #            Default: jackett
 # jackett_data_dir:    Directory where jackett configuration
 #            data is stored.
-#            Default: /var/db/jackett
+#            Default: /usr/local/jackett
 
 . /etc/rc.subr
 name=jackett
