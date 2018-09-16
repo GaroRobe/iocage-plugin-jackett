@@ -5,8 +5,8 @@ fetch https://github.com/Jackett/Jackett/releases/download/v0.9.23/Jackett.Binar
 tar -xzvf /usr/local/share/Jackett.Binaries.Mono.tar.gz -C /usr/local/share
 rm /usr/local/share/Jackett.Binaries.Mono.tar.gz
 pw user add jackett -c jackett -u 818 -d /nonexistent -s /usr/bin/nologin
-mkdir /var/db/jackett
-chown -R jackett:jackett /usr/local/share/Jackett /var/db/jackett
+mkdir /usr/local/jackett
+chown -R jackett:jackett /usr/local/share/Jackett /usr/local/jackett
 mkdir /usr/local/etc/rc.d
 
 chmod u+x /usr/local/etc/rc.d/jackett
